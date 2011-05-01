@@ -1,4 +1,17 @@
 Web::Application.routes.draw do
+  #get "pages/home"
+  #get "pages/aboutus"
+  #get "pages/solutions"
+  #get "pages/contactus"
+  
+  match '/home'      ,:to => 'pages#home'
+  match '/aboutus'   ,:to => 'pages#aboutus'
+  match '/solutions' ,:to => 'pages#solutions'
+  match '/contactus' ,:to => 'pages#contactus'
+  match '/people'    ,:to => 'pages#people'
+  
+  root :to          => "pages#home"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

@@ -1,0 +1,17 @@
+<div id="header">
+    <div id="logo"><%= link_to(image_tag("logo.jpg", :alt => "Grey Cell"), root_path) %></div>
+    <div id="menu_body">
+      <div class="menu_content">
+        <ul>
+          <li> <%= link_to("HOME", root_path) %> </li>
+          <li> <%= link_to("ABOUT US", aboutus_path) %> </li>
+          <li> <%= link_to("SOLUTIONS", solutions_path) %> </li>
+          <li class="menu_content_active"> <%= link_to("CONTACT US", contactus_path) %> </li>
+        </ul>
+        <div class="search_body">
+          <input type="text" name="search" />
+          <input style="margin-top:1px;" type="image" src="images/search_btn.gif" name="Search" />
+        </div>
+      </div>
+    </div>
+</div>
